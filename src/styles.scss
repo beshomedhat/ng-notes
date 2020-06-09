@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+@import '~ngx-toastr/toastr';
+@import '~assets/css/style.css';
+@import '~assets/css/dashboard.css';
+
+.auth-layout
+{
+    background-color:whitesmoke;
+   
+
+}
+.auth-content
+{
+    background-color:white;
+    width: 40%;
+    
+    border-radius: 0.5rem;
+}
+.auth-content img
+{
+    border-radius: 50%;
+    text-align: center;
+}
+/*---------------------------------------------------------------*/
+   

@@ -1,0 +1,109 @@
+.clr
+{
+    clear: both;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+   
+}
+
+.line1
+{
+    height: 1px;
+    background-color: #ff305b;
+    width: 7%;
+    margin: 5px auto;
+    
+}
+.line2
+{
+    height: 1px;
+    background-color: #ff305b;
+    width: 15%;
+    margin: auto;
+}
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/*--------------------------------- our-services ----------------------------*/
+.our-services
+{
+    background-color: whitesmoke;
+    padding: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+.services-info
+{
+    margin: 15px;
+}
+.services
+{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 15px;
+    transition: background-color 1s;
+    overflow: hidden;
+    
+}
+.services:hover 
+{
+    background-color: white;
+}
+.ico-img
+{
+    overflow: hidden;
+    padding: 10px;
+    transition: transform 1s;
+}
+.services:hover .ico-img
+{
+    transform: scale(1.2 , 1.2)
+}
+.services h3
+{
+    padding: 10px;
+    font-size: 24px;
+    color: #333;
+}
+.services p
+{
+    font-size: 16px;
+    color: #555555;
+}
+/*---------------------------------------------------------------------------*/
+
+/* --------------------------------------------------*/
+@media screen and (max-width:1133px)
+{
+    .services
+    {
+        width: 50%;
+    } 
+}
+
+@media screen and (max-width:768px)
+{
+
+    .services
+    {
+        width: 50%;
+    }  
+
+}
+/*--------------------------------------------------*/
+@media screen and (max-width:600px)
+{
+
+    .services
+    {
+        width: 100%;
+    }  
+
+}

@@ -1,0 +1,26 @@
+<form [formGroup]="addForm" (submit)="onSubmit()">
+    <h1 class="text-center ">Add new Post</h1>
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line1"></div>
+    <div class="form-group mt-2">
+        <label style="font-weight: bold;" for="postTitle">Title</label>
+        <input  formControlName="title" class="form-control" id="postTitle" name="postTitle"  placeholder="Enter your title"
+        [ngClass]="{ 'is-invalid': submitted && f.title.errors }" >
+        <div *ngIf="submitted && f.title.errors" class="invalid-feedback">
+            <div *ngIf="f.title.errors.required">Title is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label style="font-weight: bold;" for="postDescription">post Description</label>
+        <textarea formControlName="description" rows="6" name="postDescription" class="form-control" id="postDescription"  placeholder="Enter your post Description"
+        [ngClass]="{ 'is-invalid': submitted && f.description.errors }"  ></textarea>
+        <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+            <div *ngIf="f.description.errors.required">description is required</div>
+        </div>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-outline-primary form-control">Save</button>
+    </div>
+    
+</form>
